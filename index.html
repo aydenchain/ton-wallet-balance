@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TON API WALLET CHECKER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1> TON API WALLET CHECKER</h1>
+
+        <div class="input_group">
+            <label for="apiKey">TON API KEY:</label>
+            <input type="password" id="apiKey"placeholder="Enter your TON API key">
+        <div>
+            
+        <div class="input-group">
+            <label for ="walletAddress">Enter TON Wallet Address:</label>
+            <input type="text" id="walletAddress"placeholder="EQD... or UQD...">
+        <div>
+        
+        <button id="checkButton"onclick="checkWallet()">Check Wallet Balance</button>
+
+        <div class="sample-addresses">
+            <div class="sample-title">Sample addresses to try:</div>
+            <div class="sample-address" onclick="fillAddress('EQCxE6mUtQJKFnGfaROTKOt1lZbDiiX1kCixRv7Nw2Id_sDs')">
+                EQCxE6mUtQJKFnGfaROTKOt1lZbDiiX1kCixRv7Nw2Id_sDs
+            </div>
+            <div class="sample-address" onclick="fillAddress('EQCD39VS5jcptHL8vMjEXrzGaRcCVYto7HUn4bpAOg8xqB2N')">
+                EQCD39VS5jcptHL8vMjEXrzGaRcCVYto7HUn4bpAOg8xqB2N
+            </div>
+        </div>
+
+        <div id="result" class="result">
+            <div id="resultContent"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
